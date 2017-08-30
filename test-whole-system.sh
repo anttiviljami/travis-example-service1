@@ -13,7 +13,7 @@ git clone https://github.com/kimmobrunfeldt/travis-example-service2.git
 cd travis-example-service2
 docker-compose up &
 cd ..
-wait-port 4000
+wait-port 4000 && sleep 15
 
 # debug
 curl -vvLi http://localhost:4000/api/test || true
