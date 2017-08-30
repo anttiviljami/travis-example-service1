@@ -15,5 +15,8 @@ docker-compose up &
 cd ..
 wait-port 4000
 
+# debug
+curl -vvLi http://localhost:4000/api/test || true
+
 echo "Running tests against the whole system .."
 ./node_modules/.bin/mocha
